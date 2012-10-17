@@ -10,3 +10,4 @@
 /bootloader	mtd		bootloader
 /radio		mtd		radio
 /wimax		mtd		wimax
+/efs          yaffs2        efs

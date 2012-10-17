@@ -30,3 +30,15 @@ include device/samsung/crespo/BoardConfigCommon.mk
 
 #TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_crespo4g
 TARGET_RELEASETOOLS_EXTENSIONS := device/samsung/crespo4g
+BOARD_HAS_LARGE_FILESYSTEM := true
+BOARD_HAS_NO_REAL_SDCARD := true
+DEVICE_RESOLUTION := 480x800
+SP1_NAME := "efs"
+SP1_DISPLAY_NAME := "EFS"
+SP1_BACKUP_METHOD := files
+SP1_MOUNTABLE := 1
+#SP2_NAME := "wimax" # even though there's a reference to wimax in the recovery.fstab, it doesn't appear to exist, or, at least, it can't be backed up
+#SP2_DISPLAY_NAME := "WiMAX"
+#SP2_BACKUP_METHOD := image
+#SP2_MOUNTABLE := 0
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0

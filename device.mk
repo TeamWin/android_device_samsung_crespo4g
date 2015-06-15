@@ -53,7 +53,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Hardware-specific features
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml \
-    device/samsung/crespo4g/init.herring.rc:root/init.herring.rc
+    device/samsung/crespo4g/init.herring.rc:root/init.herring.rc\
+    device/samsung/crespo4g/twrp.fstab:recovery/root/etc/twrp.fstab
 
 # GPS config
 PRODUCT_COPY_FILES += \
